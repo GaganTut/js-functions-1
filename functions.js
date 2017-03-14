@@ -95,19 +95,23 @@ function square(x) {
  */
 
 function calculate(operation, x, y) {
+  var mathResult;
+  var mathEquation;
   if (operation === "add") {
-    console.log(x + " + " + y + " = " + add(x, y));
-    return add(x, y);
+    mathResult = add(x, y);
+    mathEquation = x + " + " + y + " = " + mathResult;
   } else if (operation === "subtract") {
-    console.log(x + " - " + y + " = " + subtract(x, y));
-    return subtract(x, y);
+    mathResult = subtract(x, y);
+    mathEquation = x + " - " + y + " = " + mathResult;
   } else if (operation === "multiply") {
-    console.log(x + " * " + y + " = " + multiply(x, y));
-    return multiply(x, y);
+    mathResult = multiply(x, y);
+    mathEquation = x + " * " + y + " = " + mathResult;
   } else if (operation === "divide") {
-    console.log(x + " / " + y + " = " + divide(x, y));
-    return divide(x, y);
+    mathResult = divide(x, y);
+    mathEquation = x + " / " + y + " = " + mathResult;
   }
+  console.log(mathEquation);
+  return mathResult;
 }
 
 
@@ -182,11 +186,7 @@ function maximum(x, y) {
  */
 
 function isEven(n) {
-  if (n % 2 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return n % 2 === 0;
 }
 
 /**
@@ -196,11 +196,7 @@ function isEven(n) {
  */
 
 function isOdd(n) {
-  if (n % 2 !== 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return n % 2 !== 0;
 }
 
 /**
@@ -217,17 +213,19 @@ function isOdd(n) {
 
 function letterGrade(score, max) {
   var testScore = score / max;
+  var finalGrade;
   if (testScore >= 0.9) {
-    return "A";
+    finalGrade = "A";
   } else if (testScore >= 0.8) {
-    return "B";
+    finalGrade = "B";
   } else if (testScore >= 0.7) {
-    return "C";
+    finalGrade = "C";
   } else if (testScore >= 0.6) {
-    return "D";
+    finalGrade = "D";
   } else {
-    return "F";
+    finalGrade = "F";
   }
+  return finalGrade;
 }
 
 /**
@@ -241,11 +239,10 @@ function letterGrade(score, max) {
 function incrementReviews(restr) {
   if (typeof restr.reviews === "number") {
     restr.reviews ++;
-    return restr;
   } else {
     restr.reviews = 1;
-    return restr;
   }
+  return restr;
 }
 
 /**
