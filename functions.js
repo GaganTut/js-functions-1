@@ -119,11 +119,7 @@ function calculate(operation, x, y) {
  */
 
 function isGreaterThan(a, b) {
-  if (a > b) {
-    return true;
-  } else {
-    return false;
-  }
+  return a > b;
 }
 
 
@@ -135,11 +131,7 @@ function isGreaterThan(a, b) {
  */
 
 function isLessThan(a, b) {
-  if (a < b) {
-    return true;
-  } else {
-    return false;
-  }
+  return a < b;
 }
 
 /**
@@ -150,11 +142,7 @@ function isLessThan(a, b) {
  */
 
 function areEqual(a, b) {
-  if (a === b) {
-    return true;
-  } else {
-    return false;
-  }
+  return a === b;
 }
 
 /**
