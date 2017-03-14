@@ -25,6 +25,10 @@ function numberToString(n) {
  * @return {number}
  */
 
+ function decrease(n) {
+  return --n;
+ }
+
 
 /**
  * Adds two numbers.
