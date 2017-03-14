@@ -38,6 +38,10 @@ function numberToString(n) {
  */
 
 
+function add(x, y) {
+  return x + y;
+}
+
 /**
  * Subtracts the second number from the first.
  * @param {number} x
