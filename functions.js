@@ -4,7 +4,9 @@
  * @return {string} the number as a string
  */
 
-
+function numberToString(n) {
+  return n.toString();
+}
 /**
  * Adds one to a given number.
  * @param {number} n
