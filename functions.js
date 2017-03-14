@@ -15,7 +15,7 @@ function numberToString(n) {
  */
 
  function increase(n) {
-  return ++n;
+   return ++n;
  }
 
 
@@ -26,7 +26,7 @@ function numberToString(n) {
  */
 
  function decrease(n) {
-  return --n;
+   return --n;
  }
 
 
